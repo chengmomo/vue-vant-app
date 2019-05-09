@@ -5,7 +5,7 @@
             <p class="header-title">如果条件满足时就做什么</p>
             <p class="header-tip">比如：打开会议室窗帘</p>
         </van-cell>
-        <my-cell-item title="延时" :icon="icon"></my-cell-item>
+        <my-cell-item title="延时" :icon="icon" @click="onRoute('timing')"></my-cell-item>
         <van-cell-group class="device-section">
             <van-cell class="device-header">
                 <div class="device-header__title">智能设备</div>
@@ -46,7 +46,7 @@
                 this.$router.back(-1)
             },
             onRoute(name) {
-                this.$router.push({name})
+                this.$router.push({name, query: {t : '2'}})
             },
             add() {
                 console.log('add')

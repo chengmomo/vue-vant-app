@@ -48,7 +48,7 @@
                 }
             },
             addClick() {
-                this.$router.push({name: 'sceneAddManual'})
+                this.$router.push({name: 'sceneAddCon'})
             }
         }
     }

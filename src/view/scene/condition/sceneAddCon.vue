@@ -6,7 +6,7 @@
             <p class="header-tip">比如：开关打开时</p>
         </van-cell>
         <my-cell-item title="手动执行" :icon="icon" border @click="onRoute('sceneAddResult')"></my-cell-item>
-        <my-cell-item title="定时" :icon="icon1"></my-cell-item>
+        <my-cell-item title="定时" :icon="icon1" @click="onRoute('timing')"></my-cell-item>
         <van-cell-group class="device-section">
             <van-cell class="device-header">
                 <div class="device-header__title">智能设备</div>
@@ -47,7 +47,7 @@
                 this.$router.back(-1)
             },
             onRoute(name) {
-                this.$router.push({name})
+                this.$router.push({name, query: {t : '1'}})
             },
             add() {
                 console.log('add')

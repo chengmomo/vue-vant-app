@@ -75,6 +75,12 @@ const routes = [{
         component: () =>
             import('../view/recommend/offWork.vue')
     },
+    {
+        path: '/my/timing',
+        name: 'timing',
+        component: () =>
+            import('../view/my/timing.vue')
+    },
 ];
 
 const router = new Router({
