@@ -1,12 +1,7 @@
 <template>
   <div class="home">
-  	<!--<ul class="menu" @click="menuClick($event)">
-    	<li class="active"><span data-attr="0">推荐</span></li>
-    	<li><span data-attr="1">我的</span></li>
-    	<li><span data-attr="2">日志</span></li>
-    </ul>-->
     <div class="menu">
-      <van-tabs @click="menuClick" class="menu-tab">
+      <van-tabs @click="menuClick" class="menu-tab" v-model="active">
         <van-tab title="推荐"></van-tab>
         <van-tab title="我的"></van-tab>
         <van-tab title="日志"></van-tab>
@@ -23,6 +18,7 @@ export default {
   data() {
     return {
         addImg: require("@/assets/icons/add.png"),
+        active: 0
     }
   },
   watch: {
@@ -32,7 +28,13 @@ export default {
   },
   beforeRouteEnter (to, from, next) {
       next(vm => {
-
+        if (to.name === 'home' || to.name === 'recommend') {
+            vm.active = 0
+        } else if (to.name === 'myPage') {
+            vm.active = 1
+        } else if (to.name === 'log') {
+            vm.active = 2
+        }
       });
   },
   methods: {
@@ -68,7 +70,11 @@ export default {
 <style scoped lang="scss">
   .menu {
     background: #fff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
     .add {
       position: absolute;
       top: 50%;

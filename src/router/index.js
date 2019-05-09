@@ -7,6 +7,7 @@ const routes = [{
 },
     {
         path: '/home',
+        name: 'home',
         component: () =>
             import('../view/home/index.vue'),
 
@@ -17,16 +18,19 @@ const routes = [{
             },
             {
                 path: 'recommend',
+                name: 'recommend',
                 component: () =>
                     import('../view/recommend/index.vue'),
             },
             {
                 path: 'my-page',
+                name: 'myPage',
                 component: () =>
                     import('../view/my/index.vue'),
             },
             {
                 path: 'log',
+                name: 'log',
                 component: () =>
                     import('../view/log/index.vue'),
             },
