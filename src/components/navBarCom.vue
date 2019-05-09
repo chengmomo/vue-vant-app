@@ -1,5 +1,6 @@
 <!--
 调用方法：
+import ComNavBar from '@/components/navBarCom'
 <com-nav-bar :barInfo="barInfo" @click-left="back" @click-right="submit"></com-nav-bar>
 data() {
     return {
