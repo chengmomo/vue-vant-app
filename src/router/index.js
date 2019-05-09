@@ -32,11 +32,11 @@ const routes = [ {
 				},
 			]
 	},
-	// {
-	// 	path: '/log',
-	// 	component: () =>
-	// 		import('../view/log/index.vue'),
-	// },
+	{
+		path: '/strategy',
+		component: () =>
+			import('../view/recommend/strategy.vue')
+	},
 ];
 
 const router = new Router({
