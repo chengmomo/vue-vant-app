@@ -1,12 +1,10 @@
 <template>
   <div class="recommend">
-    <van-list>
-      <van-cell
-      v-for="item in list"
-      :key="item"
-      :title="item"
-      @click="goRoute(item)"/>
-    </van-list>
+    <ul>
+        <li v-for="item in list" @click="goRoute(item)">
+            <img :src="item.img" alt="">
+        </li>
+    </ul>
   </div>
 </template>
 
@@ -18,7 +16,29 @@ export default {
   },
   data() {
     return {
-      list: ['1','上班','午休','下班','休息日'],
+      list: [
+          {
+              route: 'strategy',
+              img : require('../../assets/img/1.png')
+          },
+          {
+              route: 'strategy',
+              img : require('../../assets/img/2.png')
+          },
+          {
+              route: 'strategy',
+              img : require('../../assets/img/3.png')
+          },
+          {
+              route: 'offWork',
+              img : require('../../assets/img/4.png')
+          },
+          {
+              route: 'strategy',
+              img : require('../../assets/img/5.png')
+          },
+          // '1.2dacda2a','2.a3e12f8e','3.c63ccbc5','4.37fd846e','5.0e0d54dc'
+      ],
       loading: true,
       finished: false
     };
@@ -27,7 +47,7 @@ export default {
       goRoute(item) {
           console.log(item)
           this.$router.push({
-              name: 'strategy'
+              name: item.route
           })
       }
   }
@@ -36,10 +56,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .van-cell {
-    margin: 10px;
-    width: 355px;
-    height: 160px;
-    padding: 0;
+  li {
+      margin: 10px 10px 0 10px;
+      width: 355px;
+      height: 160px;
+      padding: 0;
+      float: left;
   }
 </style>

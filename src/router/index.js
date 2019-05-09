@@ -43,9 +43,16 @@ const routes = [{
         component: () => import('../view/log/logDetailMore.vue')
     },
     {
-        path: '/strategy',
+        path: '/recommend/strategy',
+        name: 'strategy',
         component: () =>
             import('../view/recommend/strategy.vue')
+    },
+    {
+        path: '/recommend/offWork',
+        name: 'offWork',
+        component: () =>
+            import('../view/recommend/offWork.vue')
     },
 ];
 
