@@ -35,7 +35,7 @@ methods: {
 
 <script>
 export default {
-  name: 'myNavBar',
+  name: 'navBarCom',
   props: {
       barInfo: {
           type: Object
