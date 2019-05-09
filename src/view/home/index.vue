@@ -22,7 +22,7 @@ export default {
   name: 'recommend',
   data() {
     return {
-        addImg: require("@/assets/icons/add.svg"),
+        addImg: require("@/assets/icons/add.png"),
     }
   },
   watch: {
