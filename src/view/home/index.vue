@@ -5,11 +5,14 @@
     	<li><span data-attr="1">我的</span></li>
     	<li><span data-attr="2">日志</span></li>
     </ul>-->
-    <van-tabs @click="menuClick" class="menu">
-      <van-tab title="推荐"></van-tab>
-      <van-tab title="我的"></van-tab>
+    <div class="menu">
+      <van-tabs @click="menuClick" class="menu-tab">
+        <van-tab title="推荐"></van-tab>
+        <van-tab title="我的"></van-tab>
         <van-tab title="日志"></van-tab>
-    </van-tabs>
+      </van-tabs>
+      <img :src="addImg" class="add">
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -17,6 +20,11 @@
 <script>
 export default {
   name: 'recommend',
+  data() {
+    return {
+        addImg: require("@/assets/icons/add.svg"),
+    }
+  },
   watch: {
       $route( to , from ){
 
@@ -29,7 +37,6 @@ export default {
   },
   methods: {
 	  menuClick(index, title) {
-	      console.log(index)
 	      if (index === 0) {
 	      	this.$router.push(`/home/recommend`)
 	      } else if (index === 1) {
@@ -59,5 +66,21 @@ export default {
 
 </style>
 <style scoped lang="scss">
+  .menu {
+    background: #fff;
+    position: relative;
+    .add {
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      width: 16px;
+      height: auto;
+      right: 10px;
+    }
+  }
+  .menu-tab {
+    width: 70%;
+    margin: 0 auto;
+  }
 
 </style>
