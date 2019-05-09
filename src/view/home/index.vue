@@ -14,12 +14,12 @@ export default {
   name: 'recommend',
   watch: {
       $route( to , from ){
-          
+
       }
   },
   beforeRouteEnter (to, from, next) {
       next(vm => {
-          
+
       });
   },
   methods: {
@@ -34,7 +34,7 @@ export default {
 	      }
 	  },
   }
-  
+
 }
 </script>
 
