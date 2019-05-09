@@ -28,7 +28,7 @@ export default {
   },
   beforeRouteEnter (to, from, next) {
       next(vm => {
-        if (to.name === 'home' || to.name === 'recommend') {
+        if (to.name === 'recommend') {
             vm.active = 0
         } else if (to.name === 'myPage') {
             vm.active = 1

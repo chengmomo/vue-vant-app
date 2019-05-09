@@ -21,7 +21,7 @@
           <img :src="icons.link" class="my-icon link-icon">
           <img :src="icons.device_switch" class="my-icon">
         </van-col>
-        <van-col span="6" class="row-right"><span class="btn">执行</span></van-col>
+        <van-col span="6" class="row-right"><span class="btn" @click="executeFn">执行</span></van-col>
       </van-row>
       <van-row class="my-title n-border">
         <van-col span="24">
@@ -166,11 +166,9 @@
 </template>
 
 <script>
-    import myDetail from './myDetail'
 export default {
   name: 'my',
   components: {
-      myDetail
   },
   props: {
 
@@ -192,7 +190,9 @@ export default {
     }
   },
   methods: {
+      executeFn() {
 
+      }
   }
 }
 </script>
