@@ -28,16 +28,22 @@
                 datas: [
                     {
                         title: '如果',
-                        content: '18:00',
-                        text: '定时',
-                        icon: require('./../../assets/icons/option_timing.png')
+                        button: true,
+                        content: [{
+                            title:'18:00',
+                            text: '定时',
+                            icon: require('./../../assets/icons/option_timing.png')
+                        }]
                     },
                     {
                         title: '就执行',
-                        content: '卷起窗帘',
-                        text: '电动卷帘',
-                        textTip: '大会议室',
-                        icon: require('./../../assets/icons/device_curtain.png')
+                        button: true,
+                        content: [{
+                            title: '卷起窗帘',
+                            text: '电动卷帘',
+                            textTip: '大会议室',
+                            icon: require('./../../assets/icons/device_curtain.png')
+                        }]
                     }
                 ]
             }

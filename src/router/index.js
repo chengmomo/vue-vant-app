@@ -7,9 +7,7 @@ const routes = [{
 },
     {
         path: '/home',
-        component: () =>
-            import('../view/home/index.vue'),
-
+        component: () => import('../view/home/index.vue'),
         children: [
             {
                 path: '/',
@@ -34,6 +32,26 @@ const routes = [{
                     import('../view/log/index.vue'),
             },
         ]
+    },
+    {
+        path: '/home/sceneAddCon',
+        name: 'sceneAddCon',
+        component: () => import('../view/scene/condition/sceneAddCon.vue')
+    },
+    {
+        path: '/home/sceneAddResult',
+        name: 'sceneAddResult',
+        component: () => import('../view/scene/condition/sceneAddResult.vue')
+    },
+    {
+        path: '/home/sceneAddManual',
+        name: 'sceneAddManual',
+        component: () => import('../view/scene/manual/sceneAddManual.vue')
+    },
+    {
+        path: '/home/sceneAddDevice',
+        name: 'sceneAddDevice',
+        component: () => import('../view/scene/device/sceneAddDevice.vue')
     },
     {
         path: '/log/detail',
