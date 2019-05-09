@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>title_timing@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-132.000000, -349.000000)" id="title_timing">
+            <g transform="translate(132.000000, 349.000000)">
+                <g id="分组-3">
+                    <circle id="椭圆形" fill="#CACACA" cx="10" cy="10" r="10"></circle>
+                    <g id="dingshi" transform="translate(5.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M5.17583022,1.01100635 C2.32880951,1.01100635 0,3.40458175 0,6.32777964 C0,9.25091488 2.32880951,11.6470588 5.17583022,11.6470588 C8.02291191,11.6470588 10.3529412,9.25354607 10.3529412,6.32896994 C10.3529412,3.40458175 8.02291191,1.01100635 5.17583022,1.01100635 Z M7.35058519,8.56304465 L4.65749705,6.86272717 L4.65749705,3.67133507 L5.43423446,3.67133507 L5.43423446,6.43641051 L7.76304397,7.87248057 L7.35058519,8.56304465 Z M9.72111018,2.51824405 L7.87666377,0.624846782 L8.48507555,7.81597009e-14 L10.3281802,1.89333462 L9.72111018,2.51824405 L9.72111018,2.51824405 Z M6.09875478e-05,1.89333462 L1.84316567,0 L2.45151646,0.624846782 L0.608350789,2.51824405 L6.09875478e-05,1.89333462 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
