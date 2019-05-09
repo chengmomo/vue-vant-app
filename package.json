@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "vant": "^1.6.17",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -32,9 +33,7 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {
-      "indent": [2, 4]
-    },
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
