@@ -61,7 +61,7 @@
         <div class="section">
             <van-row>
                 <van-col span="24" class="tip">
-                    <img :src="icons.tipImg">
+                    <img :src="icons.title_timing">
                     定时
                 </van-col>
             </van-row>
@@ -115,7 +115,7 @@
         <div class="section">
             <van-row>
                 <van-col span="24" class="tip">
-                    <img :src="icons.tipImg">
+                    <img :src="icons.title_device">
                     设备联动
                 </van-col>
             </van-row>
@@ -191,7 +191,9 @@
                     option_timing: require("@/assets/icons/option_timing.png"),
                     select_multi: require("@/assets/icons/select_multi.png"),
                     select_single: require("@/assets/icons/select_single.png"),
-                    link: require("@/assets/icons/link.png")
+                    link: require("@/assets/icons/link.png"),
+                    title_timing: require("@/assets/icons/title_timing.png"),
+                    title_device: require("@/assets/icons/title_device.png")
                 },
                 checked: true,
                 dataList: []
