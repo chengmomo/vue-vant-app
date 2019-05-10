@@ -6,8 +6,8 @@
         </van-cell>
         <van-row type="flex" align="center" class="item-content"
                  v-for="(item,index) in info.content" :key="index">
-            <van-col :span="8" class="item-text">{{item.title}}</van-col>
-            <van-col :span="16" style="text-align: right">
+            <van-col :span="12" class="item-text">{{item.title}}</van-col>
+            <van-col :span="12" style="text-align: right">
                 <div v-if="item.textTip" class="item-content__right">
                     <p class="item-text">{{item.text}}</p>
                     <p class="item-tip">{{item.textTip}}</p>
@@ -84,7 +84,8 @@
         border-bottom: 1px solid #ebedf0;
         .item-content__right {
             display: inline-block;
-            width: calc(80% - 48px);
+            width: calc(100% - 58px);
+            padding-left: 5px;
         }
         .item-content__right1 {
             line-height: 48px;
