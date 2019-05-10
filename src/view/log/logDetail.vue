@@ -28,6 +28,7 @@
                 datas: [
                     {
                         title: '如果',
+                        icon: require('@/assets/icons/select_single.png'),
                         content: [{
                             title: '18:00',
                             text: '定时',
@@ -37,6 +38,7 @@
                     },
                     {
                         title: '就执行',
+                        icon: require('@/assets/icons/title_execute.png'),
                         content: [{
                             title: '卷起窗帘',
                             text: '电动卷帘',
@@ -60,10 +62,8 @@
                 this.$router.push({name})
             },
             add() {
-                console.log('add')
             },
             handleClick() {
-                console.log('handleClick')
             }
         }
 

@@ -50,7 +50,6 @@
         },
         methods: {
             delLog() {
-                // console.log('delLog')
             },
             toDetail(item) {
                 this.$router.push({ name: 'logDetail', params: { item: item }})

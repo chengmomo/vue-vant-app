@@ -29,6 +29,7 @@
                 datas: [
                     {
                         title: '如果',
+                        icon: require('@/assets/icons/select_single.png'),
                         button: true,
                         content: [{
                             title:'18:00',
@@ -38,6 +39,7 @@
                     },
                     {
                         title: '就执行',
+                        icon: require('@/assets/icons/title_execute.png'),
                         button: true,
                         content: [{
                             title: '卷起窗帘',

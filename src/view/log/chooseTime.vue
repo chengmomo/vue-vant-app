@@ -92,7 +92,7 @@
     }
 
     .footer-confirm {
-        color: rgba(110, 164, 254, 1);
+        color: #499EFA;
         border-left: 1px solid #ebedf0;
     }
 </style>

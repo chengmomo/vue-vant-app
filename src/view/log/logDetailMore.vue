@@ -21,7 +21,7 @@
         data() {
             return {
                 barInfo: {
-                    title: '标题',
+                    title: '更多',
                     leftText: '',
                     rightText: ''
                 },
@@ -37,7 +37,6 @@
 
             },
             del() {
-                console.log('del')
             }
         }
 

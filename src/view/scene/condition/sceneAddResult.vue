@@ -63,10 +63,8 @@
                 this.$router.push({name, query: {t: '2'}})
             },
             add() {
-                console.log('add')
             },
             handleClick() {
-                console.log('handleClick')
             }
         }
 

@@ -1,19 +1,19 @@
 <template>
     <div class="item">
         <van-cell class="item-header">
-            <img src="../../assets/icons/select_single.png" class="item-header__icon">
-            <p class="item-text item-header__title">{{info.title}}</p>
+            <img :src="info.icon">
+            {{info.title}}
         </van-cell>
         <van-row type="flex" align="center" class="item-content"
                  v-for="(item,index) in info.content" :key="index">
-            <van-col :span="12" class="item-text">{{item.title}}</van-col>
-            <van-col :span="12" style="text-align: right">
-                <div class="item-content__right" v-if="item.textTip">
+            <van-col :span="8" class="item-text">{{item.title}}</van-col>
+            <van-col :span="16" style="text-align: right">
+                <div v-if="item.textTip" class="item-content__right">
                     <p class="item-text">{{item.text}}</p>
                     <p class="item-tip">{{item.textTip}}</p>
                 </div>
-                <span class="item-text item-content__right1" v-else>{{item.text}}</span>
-                <img :src="item.icon" class="item-content__icon">
+                <span v-else class="item-text item-content__right1">{{item.text}}</span>
+                <img :src="item.icon">
             </van-col>
         </van-row>
         <van-cell class="item-footer" v-if="info.button">
@@ -47,6 +47,9 @@
         .item-text {
             font-size: 16px;
             color: #333;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         .item-tip {
             font-size: 12px;
@@ -64,14 +67,14 @@
     }
 
     .item-header {
-        .item-header__icon {
+        font-size: 16px;
+        color: #333;
+        line-height: 20px;
+        img {
             width: 20px;
             height: 20px;
-            float: left;
+            vertical-align: middle;
             margin-right: 5px;
-        }
-        .item-header__title {
-            display: inline-block;
         }
     }
 
@@ -81,11 +84,12 @@
         border-bottom: 1px solid #ebedf0;
         .item-content__right {
             display: inline-block;
+            width: calc(80% - 48px);
         }
         .item-content__right1 {
             line-height: 48px;
         }
-        .item-content__icon {
+        img {
             margin-left: 10px;
             float: right;
             width: 48px;
