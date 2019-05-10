@@ -11,8 +11,12 @@
                 <div class="device-header__title">智能设备</div>
                 <div class="device-header__button">区域</div>
             </van-cell>
-            <my-cell-item title="环境质量检测面板" :icon="icon2" border label="大会议室"></my-cell-item>
-            <my-cell-item title="电动卷帘" :icon="icon3" label="大会议室"></my-cell-item>
+            <my-cell-item v-for="(item,index) in datas" :key="index"
+                          :title="item.title"
+                          :icon="item.icon"
+                          :border="index !== datas.length-1"
+                          :label="item.label"
+                          @click="handleClick"></my-cell-item>
         </van-cell-group>
     </div>
 </template>
@@ -33,9 +37,19 @@
                     rightText: ''
                 },
                 icon: require('../../../assets/icons/option_delay.png'),
-                icon1: require('../../../assets/icons/option_timing.png'),
-                icon2: require('../../../assets/icons/device_environment.png'),
-                icon3: require('../../../assets/icons/device_curtain.png'),
+                datas: [{
+                    title: '环境质量检测面板',
+                    label: '大会议室',
+                    icon: require('../../../assets/icons/device_environment.png'),
+                }, {
+                    title: '电动卷帘',
+                    label: '大会议室',
+                    icon: require('../../../assets/icons/device_curtain.png'),
+                }, {
+                    title: '电动卷帘',
+                    label: '大会议室',
+                    icon: require('../../../assets/icons/device_curtain.png'),
+                }]
             }
         },
         mounted() {
@@ -46,13 +60,11 @@
                 this.$router.back(-1)
             },
             onRoute(name) {
-                this.$router.push({name, query: {t : '2'}})
+                this.$router.push({name, query: {t: '2'}})
             },
             add() {
-                console.log('add')
             },
             handleClick() {
-                console.log('handleClick')
             }
         }
 
@@ -67,11 +79,13 @@
         .header-title {
             text-align: center;
             font-size: 22px;
+            color: black;
         }
         .header-tip {
             text-align: center;
             font-size: 12px;
             color: #999999;
+            margin-top: 10px;
         }
     }
 
@@ -96,5 +110,4 @@
     .device-header {
         border-bottom: 1px solid #ebedf0;
     }
-
 </style>

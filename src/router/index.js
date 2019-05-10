@@ -64,6 +64,11 @@ const routes = [{
         component: () => import('../view/log/logDetailMore.vue')
     },
     {
+        path: '/log/chooseTime',
+        name: 'chooseTime',
+        component: () => import('../view/log/chooseTime.vue')
+    },
+    {
         path: '/recommend/strategy',
         name: 'strategy',
         component: () =>
@@ -82,13 +87,13 @@ const routes = [{
             import('../view/my/timing.vue')
     },
     {
-        path: '/home//monitorList',
+        path: '/home/monitorList',
         name: 'monitorList',
         component: () =>
             import('../view/scene/condition/monitorList.vue')
     },
     {
-        path: '/home//selectCondition',
+        path: '/home/selectCondition',
         name: 'selectCondition',
         component: () =>
             import('../view/scene/condition/selectCondition.vue')

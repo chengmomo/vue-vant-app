@@ -1,10 +1,10 @@
 <template>
     <div class="detail">
         <nav-bar-com :bar-info="barInfo" @click-left="back" @click-right="onRoute('logDetailMore')"></nav-bar-com>
-        <log-detail-item :info="datas[0]" @click-item="add(1)"></log-detail-item>
-        <log-detail-item :info="datas[1]" @click-item="add(2)"></log-detail-item>
+        <log-detail-item :info="datas[0]" @click-item="add"></log-detail-item>
+        <log-detail-item :info="datas[1]" @click-item="add"></log-detail-item>
         <div class="detail-footer">
-            <van-cell title="生效时间段" is-link value="全天" class="detail-footer-cell" @click="handleClick"></van-cell>
+            <van-cell title="生效时间段" is-link value="全天" class="detail-footer-cell" @click="onRoute('chooseTime')"></van-cell>
         </div>
     </div>
 </template>
@@ -28,6 +28,7 @@
                 datas: [
                     {
                         title: '如果',
+                        icon: require('@/assets/icons/select_single.png'),
                         content: [{
                             title: '18:00',
                             text: '定时',
@@ -37,6 +38,7 @@
                     },
                     {
                         title: '就执行',
+                        icon: require('@/assets/icons/title_execute.png'),
                         content: [{
                             title: '卷起窗帘',
                             text: '电动卷帘',

@@ -24,7 +24,7 @@
             </van-steps>
         </div>
         <div class="del-button">
-            <img src="../../assets/icons/delete.png" class="del-img" @click="delLog">
+            <img src="../../assets/icons/delete.png" @click="delLog">
         </div>
     </div>
 </template>
@@ -50,10 +50,9 @@
         },
         methods: {
             delLog() {
-                // console.log('delLog')
             },
             toDetail(item) {
-                this.$router.push({ name: 'logDetail', params: { item: item }})
+                this.$router.push({name: 'logDetail', params: {item: item}})
             }
         }
     }
@@ -61,8 +60,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .van-step--vertical {
+        padding: 14px 10px 12px;
+    }
+
+    .van-steps--vertical {
+        padding-left: 40px;
+    }
+
     .log {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #ebedf0;
         background: white;
         margin-top: 44px;
     }
@@ -88,11 +95,11 @@
     }
 
     .step-item:first-child {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #ebedf0;
     }
 
     .step-item {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #ebedf0;
         .step-title {
             color: #333;
             font-size: 16px;
@@ -112,18 +119,16 @@
         }
     }
 
-    .van-steps--vertical {
-        padding-left: 40px;
-    }
-
     .del-button {
         background: #fff;
         position: fixed;
         bottom: 65px;
         right: 18px;
-        .del-img {
-            height: 44px;
-            width: 44px;
+        height: 44px;
+        width: 44px;
+        border-radius: 22px;
+        img {
+            width: 100%;
         }
     }
 </style>
