@@ -4,7 +4,7 @@
         <log-detail-item :info="datas[0]" @click-item="add"></log-detail-item>
         <log-detail-item :info="datas[1]" @click-item="add"></log-detail-item>
         <div class="detail-footer">
-            <van-cell title="生效时间段" is-link value="全天" class="detail-footer-cell" @click="handleClick"></van-cell>
+            <van-cell title="生效时间段" is-link value="全天" class="detail-footer-cell" @click="onRoute('chooseTime')"></van-cell>
         </div>
     </div>
 </template>
