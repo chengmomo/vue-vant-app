@@ -1,6 +1,6 @@
 <template>
     <div class="add">
-        <nav-bar-com :bar-info="barInfo" @click-left="back"  @click-right="submit"></nav-bar-com>
+        <nav-bar-com :bar-info="barInfo" @click-left="back" @click-right="submit"></nav-bar-com>
         <log-detail-item :info="datas[0]" @click-item="add"></log-detail-item>
         <log-detail-item :info="datas[1]" @click-item="add"></log-detail-item>
     </div>

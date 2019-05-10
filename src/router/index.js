@@ -64,6 +64,11 @@ const routes = [{
         component: () => import('../view/log/logDetailMore.vue')
     },
     {
+        path: '/log/chooseTime',
+        name: 'chooseTime',
+        component: () => import('../view/log/chooseTime.vue')
+    },
+    {
         path: '/recommend/strategy',
         name: 'strategy',
         component: () =>
