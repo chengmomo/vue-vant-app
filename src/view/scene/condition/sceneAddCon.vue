@@ -12,7 +12,8 @@
                 <div class="device-header__title">智能设备</div>
                 <div class="device-header__button">区域</div>
             </van-cell>
-            <my-cell-item title="环境质量检测面板" :icon="icon2" border label="大会议室" @click="onRoute('monitorList')"></my-cell-item>
+            <my-cell-item title="环境质量检测面板" :icon="icon2" border label="大会议室"
+                          @click="onRoute('monitorList')"></my-cell-item>
             <my-cell-item title="电动卷帘" :icon="icon3" label="大会议室" @click="onRoute('monitorList')"></my-cell-item>
         </van-cell-group>
     </div>
@@ -47,10 +48,9 @@
                 this.$router.back(-1)
             },
             onRoute(name) {
-                this.$router.push({name, query: {t : '1'}})
+                this.$router.push({name, query: {t: '1'}})
             },
             add() {
-                console.log('add')
             },
             handleClick() {
             }
@@ -67,11 +67,13 @@
         .header-title {
             text-align: center;
             font-size: 22px;
+            color: black;
         }
         .header-tip {
             text-align: center;
             font-size: 12px;
             color: #999999;
+            margin-top: 10px;
         }
     }
 
@@ -96,5 +98,4 @@
     .device-header {
         border-bottom: 1px solid #ebedf0;
     }
-
 </style>

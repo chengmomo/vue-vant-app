@@ -61,6 +61,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .van-cell {
+        padding: 14px 10px;
+    }
+
+    .van-cell__right-icon {
+        line-height: 34px;
+    }
+
     .cell-icon {
         width: 34px;
         height: 34px;
@@ -87,9 +95,5 @@
             color: #666666;
             font-size: 12px;
         }
-    }
-
-    .van-cell__right-icon {
-        line-height: 34px;
     }
 </style>

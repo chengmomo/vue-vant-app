@@ -79,11 +79,13 @@
         .header-title {
             text-align: center;
             font-size: 22px;
+            color: black;
         }
         .header-tip {
             text-align: center;
             font-size: 12px;
             color: #999999;
+            margin-top: 10px;
         }
     }
 
@@ -108,5 +110,4 @@
     .device-header {
         border-bottom: 1px solid #ebedf0;
     }
-
 </style>
