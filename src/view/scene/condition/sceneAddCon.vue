@@ -13,7 +13,7 @@
                 <div class="device-header__button">区域</div>
             </van-cell>
             <my-cell-item title="环境质量检测面板" :icon="icon2" border label="大会议室" @click="onRoute('monitorList')"></my-cell-item>
-            <my-cell-item title="电动卷帘" :icon="icon3" label="大会议室"></my-cell-item>
+            <my-cell-item title="电动卷帘" :icon="icon3" label="大会议室" @click="onRoute('monitorList')"></my-cell-item>
         </van-cell-group>
     </div>
 </template>
