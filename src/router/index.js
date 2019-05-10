@@ -81,6 +81,18 @@ const routes = [{
         component: () =>
             import('../view/my/timing.vue')
     },
+    {
+        path: '/home//monitorList',
+        name: 'monitorList',
+        component: () =>
+            import('../view/scene/condition/monitorList.vue')
+    },
+    {
+        path: '/home//selectCondition',
+        name: 'selectCondition',
+        component: () =>
+            import('../view/scene/condition/selectCondition.vue')
+    },
 ];
 
 const router = new Router({

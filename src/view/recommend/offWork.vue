@@ -1,6 +1,7 @@
 <template>
     <div class="detail">
-        <div class="header">
+        <div class="offWorkHeader">
+            <nav-bar-com :bar-info="barInfo" @click-left="back"></nav-bar-com>
         </div>
         <log-detail-item :info="datas[0]" @click-item="add"></log-detail-item>
         <log-detail-item :info="datas[1]" @click-item="add"></log-detail-item>
@@ -82,8 +83,13 @@
             height: 44px;
         }
     }
-    .header {
+    .offWorkHeader {
         background-image: url("../../assets/img/offWork.png");
         height: 225px;
+    }
+</style>
+<style lang="scss">
+    .offWorkHeader .van-nav-bar {
+        opacity: 0
     }
 </style>

@@ -13,13 +13,12 @@
 <script>
     import NavBarCom from '@/components/navBarCom'
     export default {
-        name: 'timing',
+        name: 'selectCondition',
         components: {NavBarCom},
         props: {
         },
         data() {
             return {
-                t: this.$route.query.t,
                 barInfo: {
                     title: '定时',
                     leftText: '',

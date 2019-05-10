@@ -56,6 +56,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .recommend {
+        margin-top: 54px;
+    }
   li {
       margin: 10px 10px 0 10px;
       width: 355px;
