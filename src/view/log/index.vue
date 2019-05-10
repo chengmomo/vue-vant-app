@@ -64,6 +64,7 @@
     .log {
         border-top: 1px solid #ddd;
         background: white;
+        margin-top: 44px;
     }
 
     .log-item {

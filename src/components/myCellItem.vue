@@ -41,7 +41,7 @@
                 default: true
             },
             icon: {
-                type: Object
+                type: String
             }
         },
         data() {
