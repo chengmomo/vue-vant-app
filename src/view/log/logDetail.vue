@@ -1,8 +1,8 @@
 <template>
     <div class="detail">
         <nav-bar-com :bar-info="barInfo" @click-left="back" @click-right="onRoute('logDetailMore')"></nav-bar-com>
-        <log-detail-item :info="datas[0]" @click-item="add"></log-detail-item>
-        <log-detail-item :info="datas[1]" @click-item="add"></log-detail-item>
+        <log-detail-item :info="datas[0]" @click-item="add(1)"></log-detail-item>
+        <log-detail-item :info="datas[1]" @click-item="add(2)"></log-detail-item>
         <div class="detail-footer">
             <van-cell title="生效时间段" is-link value="全天" class="detail-footer-cell" @click="handleClick"></van-cell>
         </div>
@@ -59,8 +59,12 @@
             onRoute(name) {
                 this.$router.push({name})
             },
-            add() {
-                console.log('add')
+            add(f) {
+                if (f === 1) {
+                    this.$router.push({name: 'sceneAddManual'})
+                } else if (f === 2) {
+                    this.$router.push({name: 'sceneAddDevice'})
+                }
             },
             handleClick() {
                 console.log('handleClick')
