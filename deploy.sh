@@ -7,9 +7,7 @@ set -e
 npm run build
 
 # 创建并切换到gh-pages分支
-# git branch gh-pages
-# 把新分支提交到云上
-# git push origin gh-pages
+# git checkout -b gh-pages
 
 # 切换到gh-pages分支
 git checkout gh-pages
